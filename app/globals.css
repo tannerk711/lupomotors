@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-lupo-black: #0A0A0A;
+  --color-lupo-dark: #111111;
+  --color-lupo-card: #1A1A1A;
+  --color-lupo-border: #2A2A2A;
+  --color-lupo-silver: #C0C0C0;
+  --color-lupo-silver-light: #D4D4D4;
+  --color-lupo-text: #F5F5F5;
+  --color-lupo-muted: #999999;
+  /* Military Green Palette */
+  --color-lupo-green: #4A5D23;
+  --color-lupo-green-light: #5C7A2E;
+  --color-lupo-green-dark: #3B4A1C;
+  --color-lupo-green-muted: #6B7F45;
+  --color-lupo-green-glow: rgba(74, 93, 35, 0.3);
+
+  /* CTA (now military green) */
+  --color-lupo-cta: #5C7A2E;
+
+  /* Font families */
+  --font-display: "Montserrat", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-lupo-black);
+  color: var(--color-lupo-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hide scrollbar for horizontal scroll sections */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Input autofill override for dark theme */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #F5F5F5;
+  -webkit-box-shadow: 0 0 0px 1000px #1A1A1A inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
