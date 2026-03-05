@@ -28,7 +28,6 @@ export default function HeroSection() {
     setIsSubmitting(true);
 
     const utmParams = getUTMParams();
-    const webhookUrl = process.env.NEXT_PUBLIC_GHL_WEBHOOK_URL;
 
     const payload = {
       vin: vinData.vin,
@@ -43,16 +42,20 @@ export default function HeroSection() {
     };
 
     try {
-      if (webhookUrl) {
-        await fetch(webhookUrl, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        });
+      const response = await fetch("/api/submit-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        console.error("Lead submission failed:", response.status);
       }
+
       trackEvent("CompleteRegistration", { source: "landing_page" });
       setStep("success");
-    } catch {
+    } catch (error) {
+      console.error("Lead submission error:", error);
       // Still show success — Drake can follow up via analytics
       setStep("success");
     } finally {
