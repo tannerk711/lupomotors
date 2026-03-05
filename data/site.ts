@@ -21,3 +21,5 @@ export const siteConfig = {
     "Montana",
   ],
 } as const;
+
+// Lupo Motors site configuration
