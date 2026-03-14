@@ -21,16 +21,10 @@ export default function LeadDetailsModal({
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm<LeadDetailsData>({
     resolver: zodResolver(leadDetailsSchema),
-    defaultValues: {
-      contactMethod: "phone",
-    },
   });
-
-  const contactMethod = watch("contactMethod");
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Complete your vehicle details">
@@ -146,67 +140,23 @@ export default function LeadDetailsModal({
             )}
           </div>
 
-          {/* Contact Method */}
-          <div>
-            <label className="block text-sm font-medium text-white/80 mb-2">
-              How should we reach you?
-            </label>
-            <div className="flex gap-3">
-              {(["phone", "email", "either"] as const).map((method) => (
-                <label key={method} className="flex-1 cursor-pointer">
-                  <input
-                    {...register("contactMethod")}
-                    type="radio"
-                    value={method}
-                    className="peer sr-only"
-                  />
-                  <div className="text-center py-3 rounded-lg border border-white/20 text-white/70 text-sm font-medium capitalize peer-checked:border-lupo-green-light peer-checked:text-white peer-checked:bg-lupo-green/10 transition-all">
-                    {method === "either" ? "Either" : method}
-                  </div>
-                </label>
-              ))}
-            </div>
-          </div>
-
           {/* Phone */}
-          {(contactMethod === "phone" || contactMethod === "either") && (
-            <div>
-              <label className="block text-sm font-medium text-white/80 mb-1.5">
-                Phone number
-              </label>
-              <input
-                {...register("phone")}
-                type="tel"
-                placeholder="(208) 555-0123"
-                className="w-full bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 px-4 py-3 text-base focus:outline-none focus:border-lupo-green-light focus:ring-1 focus:ring-lupo-green/50 transition-colors"
-              />
-              {errors.phone && (
-                <p className="mt-1 text-sm text-red-400">
-                  {errors.phone.message}
-                </p>
-              )}
-            </div>
-          )}
-
-          {/* Email */}
-          {(contactMethod === "email" || contactMethod === "either") && (
-            <div>
-              <label className="block text-sm font-medium text-white/80 mb-1.5">
-                Email address
-              </label>
-              <input
-                {...register("email")}
-                type="email"
-                placeholder="you@email.com"
-                className="w-full bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 px-4 py-3 text-base focus:outline-none focus:border-lupo-green-light focus:ring-1 focus:ring-lupo-green/50 transition-colors"
-              />
-              {errors.email && (
-                <p className="mt-1 text-sm text-red-400">
-                  {errors.email.message}
-                </p>
-              )}
-            </div>
-          )}
+          <div>
+            <label className="block text-sm font-medium text-white/80 mb-1.5">
+              Phone number
+            </label>
+            <input
+              {...register("phone")}
+              type="tel"
+              placeholder="(208) 555-0123"
+              className="w-full bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 px-4 py-3 text-base focus:outline-none focus:border-lupo-green-light focus:ring-1 focus:ring-lupo-green/50 transition-colors"
+            />
+            {errors.phone && (
+              <p className="mt-1 text-sm text-red-400">
+                {errors.phone.message}
+              </p>
+            )}
+          </div>
 
           {/* Submit */}
           <button

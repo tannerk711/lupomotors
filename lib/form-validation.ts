@@ -15,37 +15,14 @@ export const vinFormSchema = z.object({
     .regex(/^\d{1,6}$/, "Please enter a valid mileage"),
 });
 
-export const leadDetailsSchema = z
-  .object({
-    fullName: z.string().min(1, "Full name is required"),
-    priceExpectation: z.string().optional(),
-    isFinanced: z.enum(["yes", "no"], {
-      message: "Please select one",
-    }),
-    contactMethod: z.enum(["phone", "email", "either"], {
-      message: "Please select how you'd like to be contacted",
-    }),
-    phone: z.string().optional(),
-    email: z.string().email("Please enter a valid email").optional().or(z.literal("")),
-  })
-  .refine(
-    (data) => {
-      if (data.contactMethod === "phone" || data.contactMethod === "either") {
-        return data.phone && data.phone.length >= 10;
-      }
-      return true;
-    },
-    { message: "Phone number is required", path: ["phone"] }
-  )
-  .refine(
-    (data) => {
-      if (data.contactMethod === "email" || data.contactMethod === "either") {
-        return data.email && data.email.length > 0;
-      }
-      return true;
-    },
-    { message: "Email is required", path: ["email"] }
-  );
+export const leadDetailsSchema = z.object({
+  fullName: z.string().min(1, "Full name is required"),
+  priceExpectation: z.string().optional(),
+  isFinanced: z.enum(["yes", "no"], {
+    message: "Please select one",
+  }),
+  phone: z.string().min(10, "Phone number is required"),
+});
 
 export type VINFormData = z.infer<typeof vinFormSchema>;
 export type LeadDetailsData = z.infer<typeof leadDetailsSchema>;

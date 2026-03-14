@@ -36,9 +36,7 @@ export default function FinalCTA() {
       full_name: details.fullName,
       price_expectation: details.priceExpectation || "",
       is_financed: details.isFinanced,
-      contact_method: details.contactMethod,
-      phone: details.phone || "",
-      email: details.email || "",
+      phone: details.phone,
       source: "lupo-motors-landing-page-bottom",
       ...utmParams,
     };
