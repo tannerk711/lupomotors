@@ -78,6 +78,24 @@ export default function LeadDetailsModal({
         </h3>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+          {/* Full Name */}
+          <div>
+            <label className="block text-sm font-medium text-white/80 mb-1.5">
+              Full name
+            </label>
+            <input
+              {...register("fullName")}
+              type="text"
+              placeholder="John Smith"
+              className="w-full bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 px-4 py-3 text-base focus:outline-none focus:border-lupo-green-light focus:ring-1 focus:ring-lupo-green/50 transition-colors"
+            />
+            {errors.fullName && (
+              <p className="mt-1 text-sm text-red-400">
+                {errors.fullName.message}
+              </p>
+            )}
+          </div>
+
           {/* Price Expectation */}
           <div>
             <label className="block text-sm font-medium text-white/80 mb-1.5">

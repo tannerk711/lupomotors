@@ -17,6 +17,7 @@ export const vinFormSchema = z.object({
 
 export const leadDetailsSchema = z
   .object({
+    fullName: z.string().min(1, "Full name is required"),
     priceExpectation: z.string().optional(),
     isFinanced: z.enum(["yes", "no"], {
       message: "Please select one",

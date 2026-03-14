@@ -42,6 +42,14 @@ export default function Footer() {
             &copy; {currentYear} {siteConfig.name}. All rights reserved.
             Serving {siteConfig.coverageAreas.join(", ")}.
           </p>
+          <a
+            href="https://lupomotors.com/privacy-policy/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-lupo-muted hover:text-white transition-colors mt-2 inline-block"
+          >
+            Privacy Policy
+          </a>
         </div>
       </div>
     </footer>

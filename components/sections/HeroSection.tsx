@@ -32,6 +32,7 @@ export default function HeroSection() {
     const payload = {
       vin: vinData.vin,
       mileage: vinData.mileage,
+      full_name: details.fullName,
       price_expectation: details.priceExpectation || "",
       is_financed: details.isFinanced,
       contact_method: details.contactMethod,

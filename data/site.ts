@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: "Lupo Motors",
   tagline: "The Pacific Northwest's Premium Car Buyer",
-  phone: "208-659-9588",
-  phoneRaw: "2086599588",
+  phone: "866-780-5818",
+  phoneRaw: "8667805818",
   email: "Lupomotors@gmail.com",
-  url: "https://lupomotors.com",
+  url: "https://lupoautoclub.com",
   owner: "Drake",
   priceRange: "$10K–$150K",
   offerSpeed: "2-5 minutes",
