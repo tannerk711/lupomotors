@@ -41,4 +41,9 @@ export const recentPurchases: Vehicle[] = [
     priceRange: "",
     image: "/cars/Ford Ranger.JPEG",
   },
+  {
+    name: "And Many More",
+    priceRange: "",
+    image: "/cars/Garage of cars.JPEG",
+  },
 ];
