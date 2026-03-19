@@ -17,10 +17,10 @@ const requirements = [
 ];
 
 const showcaseCars = [
-  { name: "Lamborghini Urus", priceRange: "$90K–$130K", image: "/cars/urus.jpg" },
-  { name: "Ford Raptor", priceRange: "$40K–$65K", image: "/cars/raptor.jpg" },
-  { name: "Rivian R1T", priceRange: "$55K–$75K", image: "/cars/rivian.jpg" },
-  { name: "Toyota Tacoma", priceRange: "$25K–$45K", image: "/cars/tacoma.jpg" },
+  { name: "Lamborghini Urus", priceRange: "", image: "/cars/Lamborghini Urus.JPEG" },
+  { name: "Ferrari 812 GTS", priceRange: "", image: "/cars/Ferrari 812 GTS.JPEG" },
+  { name: "Mercedes G63", priceRange: "", image: "/cars/Mercedes G63.jpg" },
+  { name: "Audi RS6", priceRange: "", image: "/cars/Audi RS6.JPEG" },
 ];
 
 export default function WhatWeBuy() {
