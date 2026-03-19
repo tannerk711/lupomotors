@@ -12,7 +12,7 @@ const vehicleTypes = [
 
 const requirements = [
   "Clean CarFax (no accidents)",
-  "Running and drivable",
+  "Good running condition",
   "Good overall condition",
 ];
 

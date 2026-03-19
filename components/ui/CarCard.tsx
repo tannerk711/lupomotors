@@ -26,12 +26,9 @@ export default function CarCard({
       </div>
       <div className="p-4">
         <p className="font-semibold text-white text-base">{name}</p>
-        <div className="flex items-center justify-between mt-1">
-          <p className="text-sm text-lupo-silver">{priceRange}</p>
-          {location && (
-            <p className="text-sm text-lupo-muted">{location}</p>
-          )}
-        </div>
+        {location && (
+          <p className="text-sm text-lupo-muted mt-1">{location}</p>
+        )}
       </div>
     </div>
   );
