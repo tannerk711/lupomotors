@@ -4,10 +4,10 @@ import CarCard from "@/components/ui/CarCard";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const vehicleTypes = [
-  "Clean trucks, SUVs, and sedans ($10K–$60K)",
-  "Premium vehicles — Escalade, Raptor, Rivian ($40K–$100K)",
-  "Exotic & luxury — Porsche, Lamborghini, Ferrari ($80K–$150K)",
-  "Classic project cars (via specialty buyer network)",
+  "Clean trucks, SUVs, and sedans",
+  "Premium vehicles — Escalade, Raptor, Rivian",
+  "Exotic & luxury — Porsche, Lamborghini, Ferrari",
+  "Classic project cars",
 ];
 
 const requirements = [

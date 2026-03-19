@@ -4,17 +4,17 @@ export const faqs: FAQ[] = [
   {
     question: "How does it work?",
     answer:
-      "Submit your VIN and mileage through our form. Drake will check his dealer network and send you a real cash offer — usually within 2-5 minutes for normal cars, up to 1 hour for exotics with special options. If you accept, we arrange pickup and payment within 24-48 hours.",
+      "Submit your VIN and mileage through our form. Drake will contact you within 2-5 minutes and send you a real cash offer within 24 hours. If you accept, we arrange pickup and payment within 24-48 hours.",
   },
   {
     question: "How fast will I get an offer?",
     answer:
-      "Normal vehicles (trucks, SUVs, sedans): 2-5 minutes. Exotic or highly-optioned cars: up to 1 hour, because we verify specific options that can significantly affect value. Either way, you'll hear back the same day.",
+      "We contact you within 2-5 minutes of your submission. Offers are delivered within 24 hours — we take the time to check our dealer network and verify your vehicle's full value.",
   },
   {
     question: "What kind of cars do you buy?",
     answer:
-      "We buy clean, well-maintained vehicles from $10,000 to $150,000. This includes everyday drivers (Toyota, Honda, Ford trucks), premium vehicles (Escalade, Raptor, Rivian), and exotics (Porsche, Lamborghini, Ferrari). We also have a specialty buyer for classic project cars.",
+      "We buy clean, well-maintained vehicles from $10,000 to $500,000. This includes everyday drivers (Toyota, Honda, Ford trucks), premium vehicles (Escalade, Raptor, Rivian), and exotics (Porsche, Lamborghini, Ferrari). We also have a specialty buyer for classic project cars.",
   },
   {
     question: "What do you NOT buy?",

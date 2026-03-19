@@ -8,21 +8,21 @@ const steps = [
     icon: ScanBarcode,
     title: "Submit Your VIN",
     description:
-      "Enter your VIN and mileage. That's it. Takes 30 seconds.",
+      "Enter your VIN, mileage, and a few other details. That's it. Takes 30 seconds.",
   },
   {
     number: "02",
     icon: Zap,
     title: "Get an Offer in Minutes",
     description:
-      "We check our dealer network and send you a real cash offer. Normal cars: 2-5 minutes. Exotics: under 1 hour.",
+      "We contact you within 2-5 minutes and send you a real cash offer within 24 hours.",
   },
   {
     number: "03",
     icon: Banknote,
     title: "Get Paid Fast",
     description:
-      "Accept your offer and get paid. Cashier's check or wire transfer. We handle all the paperwork.",
+      "Accept your offer, pending inspection, and get paid. Cashier's check or wire transfer. We handle all the paperwork.",
   },
 ];
 

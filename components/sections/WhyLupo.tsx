@@ -5,13 +5,13 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 const valueProps = [
   {
     icon: Zap,
-    title: "Fastest Offers in the Market",
+    title: "Fastest Response in the Market",
     description:
-      "Normal cars: offer in 2-5 minutes. Exotics: under 1 hour. Not days. Not \"we'll get back to you.\" Minutes.",
+      "We contact you within 2-5 minutes. Offers within 24 hours. Not days. Not \"we'll get back to you.\"",
   },
   {
     icon: DollarSign,
-    title: "$10K to $150K Range",
+    title: "$10K to $500K Range",
     description:
       "We buy everything from your daily-driver Toyota to a Lamborghini Urus. One buyer, full range.",
   },

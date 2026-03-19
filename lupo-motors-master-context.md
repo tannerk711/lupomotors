@@ -64,7 +64,7 @@ Drake/Mike operates with a clear philosophy that should inform all marketing:
 - Can get automatic offers through the system immediately
 
 **Step 3: Offer Made**
-- Normal cars (Toyota, F-350, etc.): Offer in 2-5 minutes
+- Normal cars (Toyota, F-350, etc.): Contact within 2-5 minutes, offer within 24 hours
 - Exotic/optioned cars (Urus, etc.): May need more details, up to 1 hour
 - Offer presented to seller with margin built in
 
@@ -96,7 +96,7 @@ The only time Drake uses his own capital is when floating payoffs on financed ve
 ## What Cars Lupo Buys
 
 ### Target Vehicles
-**Price Range:** $10,000 - $150,000 (updated from original $5K-$300K)
+**Price Range:** $10,000 - $500,000 (updated from original $5K-$300K)
 
 **Condition Requirements:**
 - Clean CarFax (no accidents, dings, title issues)
@@ -194,7 +194,7 @@ Drake's friend in San Diego/Newport Beach spends $70K/month on social media ads 
 ## Speed Promises (What We Can Actually Claim)
 
 ### Offer Speed
-- **Normal cars:** 2-5 minutes for an offer
+- **Normal cars:** Contact within 2-5 minutes, offer within 24 hours
 - **Exotics/optioned:** Up to 1 hour (need to verify options)
 - **Safe claim:** "Offer within the hour" or "Same-day offer"
 
@@ -245,7 +245,7 @@ Drake's friend in San Diego/Newport Beach spends $70K/month on social media ads 
 
 ### Lupo's Differentiators
 1. **Speed:** Minutes, not days
-2. **Range:** $10K-$150K (daily drivers to exotics)
+2. **Range:** $10K-$500K (daily drivers to exotics)
 3. **Personal:** One guy, real relationships
 4. **Regional:** Pacific Northwest specialist
 5. **Flexibility:** Clean cars, exotics, classics (via partner)
@@ -350,7 +350,7 @@ This could be a backend upsell for sellers who don't actually want to sell.
 
 ### Must Have
 - [ ] Speed messaging ("Offer in minutes")
-- [ ] Price range ($10K-$150K)
+- [ ] Price range ($10K-$500K)
 - [ ] Regional focus (ID, OR, WA, UT, NorCal)
 - [ ] VIN + mileage form (minimum)
 - [ ] Phone number prominent

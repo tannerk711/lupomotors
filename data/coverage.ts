@@ -6,9 +6,8 @@ export const coverageStates: CoverageState[] = [
     abbreviation: "ID",
     isHomeBase: true,
     details: [
-      "Same-day pickup available",
+      "Same-day pickup available (depending on city)",
       "Cashier's check in hand",
-      "Meet within 1-2 hours",
     ],
   },
   {

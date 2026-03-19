@@ -99,7 +99,7 @@ export default function HeroSection() {
             Get a Real Offer on
             <br />
             Your Car in{" "}
-            <span className="text-lupo-green-muted">Minutes</span>
+            <span className="text-lupo-green-muted">24 Hours</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -109,7 +109,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.35 }}
             className="mt-5 text-lg md:text-xl text-white/60 max-w-xl mx-auto"
           >
-            From daily drivers to exotics. $10K&ndash;$150K.
+            From daily drivers to exotics. $10K&ndash;$500K.
             <br className="hidden sm:block" /> Cash in hand within 24-48 hours.
           </motion.p>
         </div>
