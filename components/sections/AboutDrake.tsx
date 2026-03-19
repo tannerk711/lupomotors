@@ -17,7 +17,7 @@ export default function AboutDrake() {
           {/* Left: Photo */}
           <ScrollReveal direction="left">
             <Image
-              src="/drake-headshot.png"
+              src="/drake-headshot.jpg"
               alt="Drake - Founder of Lupo Motors"
               width={400}
               height={500}
