@@ -35,11 +35,11 @@ export default function AboutDrake() {
 
             <div className="space-y-4 text-white/70 text-lg leading-relaxed -mt-4">
               <p>
-                I spent over a decade building relationships with dealers across
-                the country. I&apos;ve been in the car business my whole career — from
-                detailing to wraps to exotic maintenance. When I realized my
-                network could get sellers better offers faster than anyone else,
-                Lupo Motors was born.
+                I have spent almost two decades in the automotive business and
+                built incredible relationships all over the world to pay the
+                highest amount for your cars. We have turned selling your car
+                into an easy, secure, and honest process that is fair for all
+                parties.
               </p>
               <p>
                 When you submit your VIN, I&apos;m personally checking my buyer
