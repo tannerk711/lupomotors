@@ -12,8 +12,9 @@ export default function TrustBar() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 md:divide-x md:divide-white/10">
             <StatBadge
               icon={<Clock size={24} />}
-              value="2-5"
-              label="Minute Offers"
+              value="24"
+              label="Hour Offers"
+              numericValue={24}
             />
             <StatBadge
               icon={<Shield size={24} />}

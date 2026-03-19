@@ -110,7 +110,6 @@ export default function HeroSection() {
             className="mt-5 text-lg md:text-xl text-white/60 max-w-xl mx-auto"
           >
             From daily drivers to exotics. $10K&ndash;$500K.
-            <br className="hidden sm:block" /> Cash in hand within 24-48 hours.
           </motion.p>
         </div>
 
