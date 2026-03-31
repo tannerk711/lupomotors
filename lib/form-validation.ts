@@ -17,6 +17,9 @@ export const vinFormSchema = z.object({
 
 export const leadDetailsSchema = z.object({
   fullName: z.string().min(1, "Full name is required"),
+  year: z.string().min(4, "Year is required").regex(/^\d{4}$/, "Please enter a valid year"),
+  make: z.string().min(1, "Make is required"),
+  model: z.string().min(1, "Model is required"),
   priceExpectation: z.string().optional(),
   isFinanced: z.enum(["yes", "no"], {
     message: "Please select one",

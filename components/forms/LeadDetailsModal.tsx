@@ -90,6 +90,60 @@ export default function LeadDetailsModal({
             )}
           </div>
 
+          {/* Year, Make, Model */}
+          <div className="grid grid-cols-3 gap-3">
+            <div>
+              <label className="block text-sm font-medium text-white/80 mb-1.5">
+                Year
+              </label>
+              <input
+                {...register("year")}
+                type="text"
+                inputMode="numeric"
+                placeholder="2021"
+                maxLength={4}
+                className="w-full bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 px-4 py-3 text-base focus:outline-none focus:border-lupo-green-light focus:ring-1 focus:ring-lupo-green/50 transition-colors"
+              />
+              {errors.year && (
+                <p className="mt-1 text-sm text-red-400">
+                  {errors.year.message}
+                </p>
+              )}
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-white/80 mb-1.5">
+                Make
+              </label>
+              <input
+                {...register("make")}
+                type="text"
+                placeholder="Toyota"
+                className="w-full bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 px-4 py-3 text-base focus:outline-none focus:border-lupo-green-light focus:ring-1 focus:ring-lupo-green/50 transition-colors"
+              />
+              {errors.make && (
+                <p className="mt-1 text-sm text-red-400">
+                  {errors.make.message}
+                </p>
+              )}
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-white/80 mb-1.5">
+                Model
+              </label>
+              <input
+                {...register("model")}
+                type="text"
+                placeholder="Camry"
+                className="w-full bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 px-4 py-3 text-base focus:outline-none focus:border-lupo-green-light focus:ring-1 focus:ring-lupo-green/50 transition-colors"
+              />
+              {errors.model && (
+                <p className="mt-1 text-sm text-red-400">
+                  {errors.model.message}
+                </p>
+              )}
+            </div>
+          </div>
+
           {/* Price Expectation */}
           <div>
             <label className="block text-sm font-medium text-white/80 mb-1.5">
